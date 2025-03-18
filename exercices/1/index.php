@@ -2,6 +2,7 @@
 include('../../function/functions.php');
 require_once('../1/classes/Employe.php');
 require_once('../../classes/ConstanteClass.php');
+require_once('../../classes/StaticMemberClasse.php');
 // Créer une classe Employe contenant les propriétés et les méthodes
 // suivantes :
 // - une propriété privée : $age
@@ -39,4 +40,9 @@ echo 'appel de la constant de la classe public sur l objet';
 echo "<br>";
 echo $objConst::MA_CONSTANT_PUBLIC;
 echo "<br>";
-
+echo "<br>";
+echo "----------------------";
+echo "<br>";
+$objMyStaticMemberClass = new StaticMemeberClasse;
+echo "<br>";
+StaticMemeberClasse::maStaticMemberMethode();
